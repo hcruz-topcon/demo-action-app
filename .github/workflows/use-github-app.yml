@@ -20,8 +20,8 @@ jobs:
       with:
         token: ${{ steps.get_workflow_token.outputs.token }}
         repository: hcruz-topcon/demo-app
-    - name: log datetime
+    - name: log date
       run: |
-        datetime >> log.txt
+        date >> log.txt
         cat log.txt
 
