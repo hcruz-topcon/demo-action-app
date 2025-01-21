@@ -20,6 +20,8 @@ jobs:
       with:
         token: ${{ steps.get_workflow_token.outputs.token }}
         repository: hcruz-topcon/demo-app
-    - name: Print folder contents
-      run: ls -la        
+    - name: log datetime
+      run: |
+        datetime >> log.txt
+        cat log.txt
 
